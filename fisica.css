@@ -7,7 +7,7 @@
 :root {
      --verde-escuro: #031b08;
     --marrom: #482c21;
-    --mostarda:#59a4e0;
+    --mostarda:#d07e0e;
     --marron-claro: #615145;
     --verde: #2f615e;
     --marfin: #f8f8d6;
@@ -123,7 +123,7 @@ h1 {
     font-size: 4rem;
 }
 
-.matematica-container {
+.fisica-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
