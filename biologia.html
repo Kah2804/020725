@@ -1,220 +1,83 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
 
-:root {
-    --preto: #000000;
-    --marinho: hsl(300, 34%, 65%);
-    --amarelo-claro: #0c0c0c;
-    --roxo-claro: #B2A5FF;
-    --verde: #000000;
-    --azul-claro: #f7a9ea;
-    --branco: #FFFFFF;
-    --marron-claro: #f8d7af;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Biologia</title>
+    <link rel="stylesheet" href="biologia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-body {
-    height: 100vh;
-    box-sizing: border-box;
-    background-color: var(--azul-claro);
-    color: var(--amarelo-claro);
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+</head>
 
-header {
-    display: flex;
-    width: 100%;
-    background-color: var(--marinho);
-    padding: 1rem;
-    position: relative;
-    justify-content: center;
-}
+<body>
+    <header>
+
+        <div class="menu-disciplina">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="botao-disciplinas">Disciplinas</label>
+            <div class="lista-vertical">
+                <a href="#">Matemática</a>
+                <a href="fisica html">Física</a>
+                <a href="#">Química</a>
+            </div>
+        </div>
 
 
-.menu-disciplina {
-    width: 20%;
-    display: inline-block;
-}
+        <div class="links-principais">
+            <ul class="lista-horizontal">
+                <li><a href="#provas">Provas</a></li>
+                <li><a href="#relatorios">Relatórios</a></li>
+                <li><a href="#atividades">Atividades</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="home">
+            <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <h1>Biologia</h1>
+        <section class="biologia-container">
+            <div id="provas" class="conteudo">
+                <h2>Provas</h2>
+                <p>Provas realizadas ao longo do trimestre:</p>
+                <ul>
+                    <li>Prova 1: Conteúdo 01 - Nota: 2,8.<span class="block"> <br>Sistemas do corpo humano: respiratorio, igestorio, urinario e cardiovascular.</span>
+                    </li>
+                    <li>Prova 2: Conteúdo 02- Nota: 3,0 <span class="block"> <br>Recuperaçao prova sistemas</span>
+                    </li>
+                    <li>Prova 3: Conteúdo 01/o2 - Nota: 7,3. <span class="block"> <br>Recuperaçao total</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="relatorios" class="conteudo">
+                <h2>Relatórios</h2>
+                <p>Relatórios de experimentos e pesquisas realizados em laboratório.</p>
+                <ul>
+                    <li>Relatório: Tema 01. <span class="opacidade"> <br>biologia.</span>
+                    </li>
+                    <li>Relatório: Tema 02. <span class="opacidade"> <br>sistemas.</span>
+                    </li>
+                    <li>Relatório: Tema 03. <span class="opacidade"> <br>ISTS</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="atividades" class="conteudo">
+                <h2>Atividades</h2>
+                <p>Atividades práticas e teóricas de Biologia.</p>
+                <ul>
+                    <li>Atividade: Conteúdo 01. <span class="opacidade"> <br> Atividades livro</span></li>
+                    <li>Atividade: Conteúdo 02. <span class="opacidade"> <br> Atividades impressas</span> </li>
+                    <li>Atividade: Conteúdo 03.  <span class="opacidade"> <br> Seminario</span> </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
 
-.botao-disciplinas {
-    cursor: pointer;
-    font-size: 2rem;
-    background: none;
-    background-color: var(--preto);
-    border: none;
-    padding: 1.05rem 1.5rem;
-    color: var(--roxo-claro);
-}
-
-#menu-toggle {
-    display: none;
-}
-
-.lista-vertical {
-    display: none;
-    position: absolute;
-    background-color: var(--roxo-claro);
-    box-shadow: 0 2px 5px var(--marinho);
-    min-width: 190px;
-    z-index: 1;
-    left: 1rem;
-    top: 100%;
-}
-
-.lista-vertical a {
-    color: var(--preto);
-    padding: 0.75rem 1rem;
-    text-decoration: none;
-    font-size: 2rem;
-    display: block;
-    text-align: center;
-}
-
-.lista-vertical a:hover {
-    background-color: var(--amarelo-claro);
-}
-
-#menu-toggle:checked~.lista-vertical {
-    display: block;
-}
-
-#menu-toggle:checked+.botao-disciplinas {
-    background-color: var(--amarelo-claro);
-}
-
-.links-principais {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.lista-horizontal {
-    list-style: none;
-    display: flex;
-    font-size: 2rem;
-    gap: 17rem;
-}
-
-
-.lista-horizontal a {
-    text-decoration: none;
-    color: var(--amarelo-claro);
-}
-
-.lista-horizontal a:hover {
-    color: var(--preto);
-}
-
-main {
-    margin: 40px auto;
-    padding: 20px;
-}
-
-h1 {
-    text-align: center;
-    color: var(--verde);
-    margin-bottom: 60px;
-    font-size: 4rem;
-}
-
-.biologia-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
-.conteudo {
-    background-color: var(--branco);
-    border-radius: 10px;
-    padding: 30px;
-    width: 80%;
-    min-width: 280px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.conteudo:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0.2);
-}
-
-.conteudo h2 {
-    display: flex;
-    justify-content: center;
-    color: var(--verde);
-    margin-bottom: 15px;
-    font-size: 2.8rem;
-}
-
-.conteudo p {
-    line-height: 1.6;
-    color: var(--preto);
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-}
-
-.conteudo ul {
-    list-style-type: none;
-    font-size: 1.8rem;
-}
-
-.conteudo ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid var(--azul-claro);
-    transition: transform 0.5s ease;
-    color: var(--preto);
-}
-
-.conteudo ul li:hover {
-    transform: translateX(10px);
-    color: var(--verde);
-}
-
-.home {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.home a {
-    font-size: 2rem;
-    color: var(--verde);
-}
-
-.conteudo ul li .block {
-    display: none;
-}
-
-.conteudo ul li:hover .block {
-    display: block;
-    text-align: justify;
-    color: var(--marinho);
-    margin-bottom: 5px;
-}
-
-.opacidade {
-    display: block;
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 1.5s ease, max-height 1.5s ease;
-    color: var(--marinho);
-    text-align: justify;
-    margin: 0;
-    padding: 0;
-}
-
-.conteudo ul li:hover .opacidade {
-    opacity: 1;
-    max-height: 320px;
-    text-align: justify;
-    color: var(--marinho);
-    margin-bottom: 5px;
-}
+</html>
