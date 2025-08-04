@@ -5,22 +5,21 @@
 }
 
 :root{
-    --verde-escuro: #031b08;
-    --marrom: #482c21;
-    --mostarda:#d00ea0a4;
-    --marron-claro: #615145;
-    --verde: #3b612f;
-    --marfin: #f8f8d6;
-    --marron-claro: #3e94a0;
-    --amarel0-claro:#e9deb0;
-    --terra: #a73e2b;
+    --preto: #000000;
+    --marinho: #d321d3;
+    --amarelo-claro:#f5e48d;
+    --roxo-claro:#B2A5FF;
+    --verde: #7cdb45;
+    --azul-claro: #E4EFE7;
+    --branco: #FFFFFF;
+    --marron-claro: #FAF1E6;
 }
 
 body{
     height: 100vh;
     box-sizing: border-box;
-    background-color: var(--marfin);
-    color: var(--verde-escuro);
+    background-color: var(--azul-claro);
+    color: var(--preto);
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -28,14 +27,14 @@ body{
 header {
     display: flex; 
     width: 100%;
-    background-color: var(--terra);
+    background-color: var(--marinho);
     padding: 1rem;
     justify-content: center;
 }
 
 .portfolio h1{
     font-size: 4rem;
-    color: var(--marrom);
+    color: var(--amarelo-claro);
 }
 main {
     margin: 40px auto;
@@ -55,7 +54,7 @@ main {
 .disciplina {
     display: flex;
     justify-content: center;
-    background-color: var(--amarel0-claro);
+    background-color: var(--branco);
     border-radius: 10px;
     padding: 30px;
     width: 80%;
@@ -70,7 +69,10 @@ main {
 }
 
 .disciplina a {
-    color: var(--verde-escuro);
+    color: var(--verde);
     font-size: 5rem;
     text-decoration: none;
 }
+
+
+
