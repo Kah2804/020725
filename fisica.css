@@ -5,21 +5,20 @@
 }
 
 :root {
-     --verde-escuro: #031b08;
-    --marrom: #482c21;
-    --mostarda:#d07e0e;
-    --marron-claro: #615145;
-    --verde: #2f615e;
-    --marfin: #f8f8d6;
-    --marron-claro: #615145;
-    --amarel0-claro:#e9deb0;
-    --terra: #a73e2b;
+    --preto: #000000;
+    --marinho: #f49efc;
+    --amarelo-claro: #ffffff;
+    --roxo-claro: #f578cf;
+    --verde: #f39ff3;
+    --azul-claro: #ecbede;
+    --branco: #FFFFFF;
+    --marron-claro: #FAF1E6;
 }
 
 body {
     height: 100vh;
     box-sizing: border-box;
-    background-color: var(--marfin);
+    background-color: var(--azul-claro);
     color: var(--amarelo-claro);
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -28,7 +27,7 @@ body {
 header {
     display: flex;
     width: 100%;
-    background-color: var(--terra);
+    background-color: var(--marinho);
     padding: 1rem;
     position: relative;
     justify-content: center;
@@ -44,10 +43,10 @@ header {
     cursor: pointer;
     font-size: 2rem;
     background: none;
-    background-color: var(--marrom);
+    background-color: var(--preto);
     border: none;
     padding: 1.05rem 1.5rem;
-    color: var(--terra);
+    color: var(--roxo-claro);
 }
 
 #menu-toggle {
@@ -57,8 +56,8 @@ header {
 .lista-vertical {
     display: none;
     position: absolute;
-    background-color: var(--terra);
-    box-shadow: 0 2px 5px var(--terra);
+    background-color: var(--roxo-claro);
+    box-shadow: 0 2px 5px var(--marinho);
     min-width: 190px;
     z-index: 1;
     left: 1rem;
@@ -66,7 +65,7 @@ header {
 }
 
 .lista-vertical a {
-    color: var(--mostarda);
+    color: var(--preto);
     padding: 0.75rem 1rem;
     text-decoration: none;
     font-size: 2rem;
@@ -75,7 +74,7 @@ header {
 }
 
 .lista-vertical a:hover {
-    background-color: var(--terra);
+    background-color: var(--amarelo-claro);
 }
 
 #menu-toggle:checked~.lista-vertical {
@@ -83,7 +82,7 @@ header {
 }
 
 #menu-toggle:checked+.botao-disciplinas {
-    background-color: var(--terra);
+    background-color: var(--amarelo-claro);
 }
 
 .links-principais {
@@ -104,11 +103,11 @@ header {
 
 .lista-horizontal a {
     text-decoration: none;
-    color: var(--amarel0-claro);
+    color: var(--amarelo-claro);
 }
 
 .lista-horizontal a:hover {
-    color: var(--marrom);
+    color: var(--preto);
 }
 
 main {
@@ -118,7 +117,7 @@ main {
 
 h1 {
     text-align: center;
-    color: var(--verde-escuro);
+    color: var(--verde);
     margin-bottom: 60px;
     font-size: 4rem;
 }
@@ -133,7 +132,7 @@ h1 {
 }
 
 .conteudo {
-    background-color: var(--marfin);
+    background-color: var(--branco);
     border-radius: 10px;
     padding: 30px;
     width: 80%;
@@ -157,7 +156,7 @@ h1 {
 
 .conteudo p {
     line-height: 1.6;
-    color: var(--marrom);
+    color: var(--preto);
     margin-bottom: 20px;
     font-size: 1.8rem;
 }
@@ -169,14 +168,14 @@ h1 {
 
 .conteudo ul li {
     padding: 10px 0;
-    border-bottom: 1px solid var(--verdeo);
+    border-bottom: 1px solid var(--azul-claro);
     transition: transform 0.5s ease;
-    color: var(--marrom);
+    color: var(--preto);
 }
 
 .conteudo ul li:hover {
     transform: translateX(10px);
-    color: var(--terra);
+    color: var(--verde);
 }
 
 .home {
@@ -186,7 +185,7 @@ h1 {
 
 .home a {
     font-size: 2rem;
-    color: var(--terra);
+    color: var(--verde);
 }
 
 .conteudo ul li .block {
@@ -196,7 +195,7 @@ h1 {
 .conteudo ul li:hover .block {
     display: block;
     text-align: justify;
-    color: var(--marron-claro);
+    color: var(--marinho);
     margin-bottom: 5px;
 }
 
@@ -206,7 +205,7 @@ h1 {
     max-height: 0;
     overflow: hidden;
     transition: opacity 1.5s ease, max-height 1.5s ease;
-    color: var(--verde);
+    color: var(--marinho);
     text-align: justify;
     margin: 0;
     padding: 0;
@@ -216,6 +215,6 @@ h1 {
     opacity: 1;
     max-height: 320px;
     text-align: justify;
-    color: var(--verde-escuro);
+    color: var(--marinho);
     margin-bottom: 5px;
 }
